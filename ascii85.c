@@ -1,7 +1,7 @@
 /*
  * ascii85 - Ascii85 encode/decode data and print to standard output
  *
- * Copyright (C) 2014 Remy Oukaour.
+ * Copyright (C) 2012-2014 Remy Oukaour.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -74,7 +74,7 @@
 	"\tWritten by Remy Oukaour <remy.oukaour@gmail.com>.\n"\
 	"\n"\
 	"COPYRIGHT\n"\
-	"\tCopyright (C) 2014 Remy Oukaour. MIT License.\n"\
+	"\tCopyright (C) 2012-2014 Remy Oukaour. MIT License.\n"\
 	"\tThis is free software: you are free to change and redistribute it.\n"\
 	"\tThere is NO WARRANTY, to the extent permitted by law.\n")
 
