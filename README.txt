@@ -33,6 +33,7 @@ AUTHOR
         Written by Remy Oukaour <remy.oukaour@gmail.com>.
 
 COPYRIGHT
-        Copyright (C) 2012-2014 Remy Oukaour. MIT License.
+        Copyright (C) 2012-2014 Remy Oukaour <http://www.remyoukaour.com>.
+        MIT License.
         This is free software: you are free to change and redistribute it.
         There is NO WARRANTY, to the extent permitted by law.
