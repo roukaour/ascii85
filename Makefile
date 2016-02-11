@@ -1,7 +1,7 @@
 TARGET = ascii85
 
 CC = gcc
-CFLAGS = -Wall -Wextra
+CFLAGS = -std=c11 -Wall -Wextra -pedantic -O3
 RM = rm -f
 
 .PHONY: all $(TARGET) clean

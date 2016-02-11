@@ -30,7 +30,7 @@
 #include <errno.h>
 #include <ctype.h>
 
-#define eprintf(args...) fprintf(stderr, args)
+#define eprintf(...) fprintf(stderr, __VA_ARGS__)
 
 #define PROGRAM_NAME "ascii85"
 
@@ -211,8 +211,6 @@ void ascii85_decode(FILE *fp, int delims, int ignore_garbage) {
 }
 
 int main(int argc, char *argv[]) {
-	extern char *optarg;
-	extern int optind, optopt, opterr;
 	int opt, long_optind;
 	int decode = 0, ignore_garbage = 0, delims = 1, wrap = 76, y_abbr = 0;
 	char buffer[BUFFER_SIZE];
