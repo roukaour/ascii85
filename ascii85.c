@@ -79,8 +79,6 @@
 	"\tThis is free software: you are free to change and redistribute it.\n"\
 	"\tThere is NO WARRANTY, to the extent permitted by law.\n")
 
-#define BUFFER_SIZE 4096
-
 int powers[5] = {85*85*85*85, 85*85*85, 85*85, 85, 1};
 
 int getc_nospace(FILE *f) {
@@ -213,7 +211,6 @@ void ascii85_decode(FILE *fp, int delims, int ignore_garbage) {
 int main(int argc, char *argv[]) {
 	int opt, long_optind;
 	int decode = 0, ignore_garbage = 0, delims = 1, wrap = 76, y_abbr = 0;
-	char buffer[BUFFER_SIZE];
 	FILE *fp = stdin;
 	char *opts = "dinw:yh";
 	struct option long_opts[] = {
@@ -257,7 +254,7 @@ int main(int argc, char *argv[]) {
 		eprintf(USAGE_TEXT);
 		exit(1);
 	}
-	setbuf(fp, buffer);
+	setbuf(fp, NULL);
 	if (wrap < 1) wrap = 0;
 	if (decode)
 		ascii85_decode(fp, delims, ignore_garbage);
